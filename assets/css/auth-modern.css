@@ -1,0 +1,202 @@
+/* Modern authentication styles */
+body {
+    background: linear-gradient(135deg, #6f42c1, #007bff);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.back-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.auth-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-icon {
+    font-size: 40px;
+    color: #6f42c1;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+
+.form-control {
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 45px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: #6f42c1;
+    box-shadow: none;
+}
+
+.role-select {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.role-option {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.role-option.active {
+    border-color: #6f42c1;
+    background: rgba(111, 66, 193, 0.1);
+}
+
+.role-option i {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #6f42c1;
+}
+
+.btn-auth {
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #6f42c1, #007bff);
+    border: none;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.auth-links {
+    text-align: center;
+}
+
+.auth-links a {
+    color: #6f42c1;
+    text-decoration: none;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background: #e9ecef;
+}
+
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+/* Registration form specific styles */
+.registration-form .form-group {
+    margin-bottom: 15px;
+}
+
+.registration-form .alert ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+/* Password strength indicator */
+.password-strength {
+    height: 4px;
+    margin-top: 5px;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.password-strength.weak {
+    width: 33%;
+    background: #dc3545;
+}
+
+.password-strength.medium {
+    width: 66%;
+    background: #ffc107;
+}
+
+.password-strength.strong {
+    width: 100%;
+    background: #28a745;
+}
+
+/* Form validation styles */
+.form-control.is-invalid {
+    border-color: #dc3545;
+    background-image: none;
+}
+
+.form-control.is-valid {
+    border-color: #28a745;
+    background-image: none;
+}
+
+/* Hover effects */
+.role-option:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.btn-auth:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(111, 66, 193, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .auth-card {
+        padding: 20px;
+    }
+    
+    .role-select {
+        flex-direction: column;
+    }
+    
+    .role-option {
+        margin-bottom: 10px;
+    }
+} 

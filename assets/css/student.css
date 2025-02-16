@@ -1,0 +1,39 @@
+/* Student Dashboard Specific Styles */
+.course-card {
+    height: 100%;
+    transition: transform 0.2s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.progress-card {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    color: white;
+}
+
+.assignment-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.grade-badge {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Assignment View Styles */
+.assignment-details {
+    background-color: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.submission-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+} 

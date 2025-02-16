@@ -1,0 +1,144 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #34495e;
+    --accent: #3498db;
+    --success: #2ecc71;
+    --danger: #e74c3c;
+    --text: #2c3e50;
+    --bg-light: #f8f9fa;
+    --border: #dee2e6;
+}
+
+/* Common Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    background-color: #f5f6fa;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 1rem;
+    background: white;
+    padding: 1.5rem;
+}
+
+.btn {
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+/* Layout Components */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background: var(--primary);
+    color: white;
+    z-index: 1000;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 2rem;
+}
+
+/* Common Components */
+.stats-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/* Utility Classes */
+.hover-lift { transition: transform 0.2s; }
+.hover-lift:hover { transform: translateY(-5px); }
+
+.bg-gradient { 
+    background: linear-gradient(45deg, var(--primary), var(--accent));
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .sidebar { width: 200px; }
+    .main-content { margin-left: 200px; padding: 1rem; }
+} 
+
+/* Update the dropdown styles */
+.nav-menu .nav-item.dropdown {
+    width: 100%;
+}
+
+.nav-menu .dropdown-toggle {
+    width: 100%;
+    text-align: left;
+    padding: 0.8rem 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu .dropdown-toggle:hover,
+.nav-menu .dropdown-toggle:focus {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.nav-menu .dropdown-menu {
+    position: static !important;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.1);
+    transform: none !important;
+}
+
+.nav-menu .dropdown-item {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.8rem 2.5rem;
+    white-space: normal;
+}
+
+.nav-menu .dropdown-item:hover,
+.nav-menu .dropdown-item:focus {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.nav-menu .dropdown-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 0;
+}
+
+/* Fix dropdown arrow position */
+.nav-menu .dropdown-toggle::after {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Active states */
+.nav-menu .dropdown.show .dropdown-toggle {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+} 

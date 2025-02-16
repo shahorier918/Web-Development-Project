@@ -1,0 +1,177 @@
+/* Course Management Styles */
+.course-info {
+    background-color: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.course-info h5 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.course-info .text-muted {
+    font-size: 0.9rem;
+}
+
+/* Form Styling Enhancements */
+.form-group label {
+    color: var(--secondary-color);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.form-group label i {
+    margin-right: 0.5rem;
+    color: var(--accent-color);
+    width: 20px;
+    text-align: center;
+}
+
+.form-control {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Custom Switch Styling */
+.custom-switch {
+    padding-left: 2.75rem;
+}
+
+.custom-control-label {
+    padding-top: 2px;
+}
+
+.custom-control-label::before {
+    background-color: #e9ecef;
+    border-color: #adb5bd;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.card-header {
+    background-color: white;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.25rem;
+}
+
+.card-header h4 {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin: 0;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Button Styling */
+.btn {
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.btn i {
+    width: 16px;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    transform: translateY(-1px);
+}
+
+/* Invalid Feedback Styling */
+.invalid-feedback {
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+/* Date Input Specific Styling */
+input[type="date"].form-control {
+    padding: 0.5rem 0.75rem;
+}
+
+/* Number Input Specific Styling */
+input[type="number"].form-control {
+    padding-right: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .course-info {
+        padding: 1rem;
+    }
+    
+    .btn {
+        padding: 0.4rem 1.2rem;
+    }
+    
+    .form-group label {
+        font-size: 0.95rem;
+    }
+}
+
+/* Animation Effects */
+.form-control, .btn {
+    transition: all 0.2s ease-in-out;
+}
+
+.form-control:hover {
+    border-color: var(--accent-color);
+}
+
+/* Custom Scrollbar */
+textarea.form-control::-webkit-scrollbar {
+    width: 8px;
+}
+
+textarea.form-control::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+textarea.form-control::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+textarea.form-control::-webkit-scrollbar-thumb:hover {
+    background: #999;
+} 
